@@ -1,0 +1,68 @@
+.header-bottom-options {
+  &__list {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    font-family: var(--montserrat-font);
+    font-weight: 700;
+  }
+
+  &__item {
+    border-top: var(--main-color) solid 7px;
+    height: 375px;
+    width: 25%;
+    background-color: var(--dark-blue-color);
+    position: relative;
+
+    &:nth-child(even) {
+      border-top: var(--white-color) solid 7px;
+      background-color: var(--main-color);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 80px;
+      width: 80px;
+    }
+
+    &:first-child::after {
+      background-image: url("../images/Forma1.png");
+    }
+
+    &:nth-child(2)::after {
+      background-image: url("../images/Forma2.png");
+    }
+
+    &:nth-child(3)::after {
+      background-image: url("../images/Forma3.png");
+    }
+
+    &:last-child::after {
+      background-image: url("../images/Forma4.png");
+    }
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 66%;
+  }
+}
+
+.even-option {
+  color: var(--main-color);
+}

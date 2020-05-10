@@ -1,0 +1,33 @@
+.title {
+  font-family: var(--montserrat-font);
+  font-size: 36px;
+  color: var(--title-color);
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+}
+.breaking_news__title::after {
+}
+.title::after {
+  content: "";
+  display: block;
+
+  width: 76px;
+  height: 1px;
+  background-color: var(--main-color);
+  position: absolute;
+  right: 48%;
+  top: 68px;
+}
+.title::before {
+  content: "";
+  display: block;
+
+  width: 76px;
+  height: 1px;
+  background-color: var(--main-color);
+  position: absolute;
+  right: 46%;
+  top: 72px;
+}

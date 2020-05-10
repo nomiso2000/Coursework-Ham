@@ -1,0 +1,82 @@
+.amazing-section {
+  height: 1210px;
+  background-color: #f8fcfe;
+  border-bottom: 1px #e1e1e1 solid;
+  padding: 80px 0 0;
+}
+.amazing-section--midified {
+  height: 1620px;
+}
+.amazing-section__list {
+  width: 51%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 100px auto 0;
+}
+.amazing-section__item {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(121, 117, 117);
+  width: calc(100% / 5);
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.activeSection {
+  color: #18cfab;
+  border-top: #18cfab solid 2px;
+}
+.amazing-section__gallery {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 70px;
+}
+.amazing-section__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.amazing-section__article {
+  height: 206px;
+}
+.amazing-section__button {
+  height: 60px;
+  width: 164px;
+  background-color: #18cfab;
+  border: none;
+  cursor: pointer;
+  transition: all linear 200ms;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 70px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  outline: none;
+}
+.amazing-section__button:hover {
+  transform: scale(1.01);
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
